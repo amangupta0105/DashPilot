@@ -1,8 +1,10 @@
-import React from 'react'
+import DashBoardHeader from "../components/Header/DashBoardHeader"
 
 const DashBoard = () => {
   return (
-    <div className=''>DashBoard</div>
+    <div className=''>
+        <DashBoardHeader />
+    </div>
   )
 }
 
