@@ -5,6 +5,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import DashBoard from "./screens/DashBoard";
+import TaskContextProvider from "./context/TaskContextProvider";
 
 function App() {
   const router = createBrowserRouter(
@@ -13,7 +14,9 @@ function App() {
 
   return (
     <>
+    <TaskContextProvider>
       <RouterProvider router={router} />
+    </TaskContextProvider>
     </>
   );
 }

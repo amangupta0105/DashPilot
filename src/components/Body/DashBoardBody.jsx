@@ -2,7 +2,7 @@ import TashColumn from "../TaskColumn/TashColumn";
 
 const DashBoardBody = () => {
   return (
-    <div className="flex justify-around mt-4">
+    <div className="flex justify-around mt-4 overflow-y-auto">
       <TashColumn title={"IN PROGRESS"} />
       <TashColumn title={"IN REVIEW"} />
       <TashColumn
